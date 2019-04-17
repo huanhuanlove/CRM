@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.kang.domin">
+    
+    	<class name="Customer" table="customer">
+    		
+    		<id name="id" column="cust_id">
+    			
+    			<generator class="native"></generator>
+    			
+    		</id>
+    		
+    		<property name="name" column="cust_name"></property>
+    		
+    		<property name="source" column="cust_source"></property>
+    		
+    		<property name="industry" column="cust_industry"></property>
+    		
+    		<property name="level" column="cust_level"></property>
+    		
+    		<property name="phone" column="cust_phone"></property>
+    		
+    		<property name="mobile" column="cust_mobile"></property>
+    		
+    	
+    	</class>
+    
+    </hibernate-mapping>
