@@ -42,6 +42,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>com/kang/domin/user.hbm.xml</value>
+				<value>com/kang/domin/customer.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -64,6 +65,12 @@
 	
 	</bean>
 	
+	<bean id="customerAction" class="com.kang.action.CustomerAction" scope="prototype">
+		
+		<property name="customerService" ref="customerService"></property>
+	
+	</bean>
+	
 	
 	<!-- serviceimpl -->
 	<bean id="userService" class="com.kang.service.impl.UserServiceImpl">
@@ -72,9 +79,21 @@
 	
 	</bean>
 	
+	<bean id="customerService" class="com.kang.service.impl.CustomerServiceImpl">
+		
+		<property name="customerDao" ref="customerDao"></property>
+	
+	</bean>
+	
 	
 	<!-- daoimpl -->
 	<bean id="userDao" class="com.kang.dao.impl.UserDaoImpl">
+		
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	
+	</bean>
+	
+	<bean id="customerDao" class="com.kang.dao.impl.CustomDaoImpl">
 		
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	

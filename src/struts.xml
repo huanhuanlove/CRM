@@ -18,5 +18,13 @@
 		
 		</action>
 		
+		
+		<action name="customer_*" class="customerAction" method="{1}">
+			
+			<result name="toAddPage">/jsp/customer/add.jsp</result>
+		
+		
+		</action>
+		
 	</package>
 </struts>
