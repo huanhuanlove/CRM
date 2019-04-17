@@ -5,4 +5,5 @@ import com.kang.domin.Customer;
 
 public class CustomDaoImpl extends BaseDaoImpl<Customer> implements CustomerDao{
 
+
 }

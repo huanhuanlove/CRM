@@ -32,12 +32,10 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
 		User u1 = userService.login(user);
 		String msg = null;
 		if (u1!=null) {
-			addFieldError(msg, "登录成功");
 			ServletActionContext.getRequest().getSession().setAttribute("user", u1);
 			return "loginSuccess";
 		}
 		
-		addFieldError(msg, "登录失败，用户名或密码错误！！！");
 		return "loginError";
 	}
 	

@@ -6,7 +6,7 @@
 	<!-- 配置常量 -->
 	<!-- <constant name="struts.action.extension" value="action"/> -->
 	<constant name="struts.i18n.encoding" value="utf-8"></constant>
-	<constant name="struts.devMode" value="true"></constant>
+	<!-- <constant name="struts.devMode" value="true"></constant> -->
 	
 	<package name="kang1" extends="struts-default" namespace="/" strict-method-invocation="false">
 	
@@ -22,6 +22,8 @@
 		<action name="customer_*" class="customerAction" method="{1}">
 			
 			<result name="toAddPage">/jsp/customer/add.jsp</result>
+			
+			<result name="addCustom">/jsp/success.jsp</result>
 		
 		
 		</action>

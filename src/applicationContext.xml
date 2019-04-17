@@ -58,7 +58,7 @@
 	<!--*************************************以上基本为定值(稍作修改即可)**************************************-->
 	
 	
-	<!-- action -->
+								<!-- action -->
 	<bean id="userAction" class="com.kang.action.UserAction" scope="prototype">
 		
 		<property name="userService" ref="userService"></property>
@@ -68,11 +68,11 @@
 	<bean id="customerAction" class="com.kang.action.CustomerAction" scope="prototype">
 		
 		<property name="customerService" ref="customerService"></property>
-	
+		
 	</bean>
 	
 	
-	<!-- serviceimpl -->
+								<!-- serviceimpl -->
 	<bean id="userService" class="com.kang.service.impl.UserServiceImpl">
 		
 		<property name="userDao" ref="userDao"></property>
@@ -82,11 +82,11 @@
 	<bean id="customerService" class="com.kang.service.impl.CustomerServiceImpl">
 		
 		<property name="customerDao" ref="customerDao"></property>
-	
+		
 	</bean>
 	
 	
-	<!-- daoimpl -->
+								<!-- daoimpl -->
 	<bean id="userDao" class="com.kang.dao.impl.UserDaoImpl">
 		
 		<property name="sessionFactory" ref="sessionFactory"></property>
@@ -98,6 +98,8 @@
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	
 	</bean>
+	
+	
 	
 	
 	

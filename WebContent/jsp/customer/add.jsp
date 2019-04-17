@@ -15,7 +15,7 @@
 </HEAD>
 <BODY>
 	<FORM id=form1 name=form1
-		action="${pageContext.request.contextPath }/custom_addCustom"
+		action="${pageContext.request.contextPath }/customer_addCustom.action"
 		method=post>
 		
 
@@ -53,12 +53,12 @@
 								<td>客户名称：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_name">
+														style="WIDTH: 180px" maxLength=50 name="name">
 								</td>
 								<td>客户级别 ：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_level">
+														style="WIDTH: 180px" maxLength=50 name="level">
 								</td>
 							</TR>
 							
@@ -67,12 +67,12 @@
 								<td>信息来源 ：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_source">
+														style="WIDTH: 180px" maxLength=50 name="source">
 								</td>
 								<td>所属行业 ：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_industry">
+														style="WIDTH: 180px" maxLength=50 name="industry">
 								</td>
 							</TR>
 							
@@ -82,12 +82,12 @@
 								<td>固定电话 ：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_phone">
+														style="WIDTH: 180px" maxLength=50 name="phone">
 								</td>
 								<td>移动电话 ：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
-														style="WIDTH: 180px" maxLength=50 name="cust_mobile">
+														style="WIDTH: 180px" maxLength=50 name="mobile">
 								</td>
 							</TR>
 							
