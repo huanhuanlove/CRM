@@ -41,8 +41,7 @@
 		<!-- 加载映射文件 -->
 		<property name="mappingResources">
 			<list>
-				<value>/com/kang/domin/user.hbm.xml</value>
-				<value>/com/kang/domin/custom.hbm.xml</value>
+				<value>com/kang/domin/user.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -56,6 +55,30 @@
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
 	<!--*************************************以上基本为定值(稍作修改即可)**************************************-->
+	
+	
+	<!-- action -->
+	<bean id="userAction" class="com.kang.action.UserAction" scope="prototype">
+		
+		<property name="userService" ref="userService"></property>
+	
+	</bean>
+	
+	
+	<!-- serviceimpl -->
+	<bean id="userService" class="com.kang.service.impl.UserServiceImpl">
+		
+		<property name="userDao" ref="userDao"></property>
+	
+	</bean>
+	
+	
+	<!-- daoimpl -->
+	<bean id="userDao" class="com.kang.dao.impl.UserDaoImpl">
+		
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	
+	</bean>
 	
 	
 	

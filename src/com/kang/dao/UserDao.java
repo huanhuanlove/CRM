@@ -1,8 +1,8 @@
-package com.kang.service;
+package com.kang.dao;
 
 import com.kang.domin.User;
 
-public interface UserService {
+public interface UserDao {
 
 	User login(User user);
 

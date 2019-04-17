@@ -10,7 +10,13 @@
 	
 	<package name="kang1" extends="struts-default" namespace="/" strict-method-invocation="false">
 	
+		<action name="user_*" class="userAction" method="{1}">
+			
+			<result name="loginSuccess">index.jsp</result>
+			
+			<result name="loginError">login.jsp</result>
 		
+		</action>
 		
 	</package>
 </struts>

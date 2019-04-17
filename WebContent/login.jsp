@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE>
 <HTML>
 <HEAD>
@@ -45,7 +46,7 @@ style="LEFT: 0px; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #0066ff"></DIV
               <TR>
                 <TD style="HEIGHT: 28px" width=80>登 录 名：</TD>
                 <TD style="HEIGHT: 28px" width=150><INPUT id=txtName 
-                  style="WIDTH: 130px" name=username></TD>
+                  style="WIDTH: 130px" name=name></TD>
                 <TD style="HEIGHT: 28px" width=370><SPAN 
                   id=RequiredFieldValidator3 
                   style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入登录名</SPAN></TD></TR>
